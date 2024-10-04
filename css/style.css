@@ -848,3 +848,35 @@ input[type="email" i] {
         text-align: center; /* Mantén el texto centrado */
     }
 }
+
+.footer-menu-nav .footer__linkStyle {
+    margin-bottom: 0px;
+    opacity: 1;
+    font-size: 13px;
+    margin-right: 27px;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .footer-menu-nav .footer__linkStyle {
+        margin-right: 0px; /* Quita el margin-right en móviles */
+    }
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; /* Mantiene el padding en pantallas grandes */
+    unicode-bidi: isolate;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    ul {
+        padding-inline-start: 0px; /* Elimina el padding en móviles */
+    }
+}
