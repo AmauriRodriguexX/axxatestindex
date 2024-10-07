@@ -880,3 +880,122 @@ ul {
         padding-inline-start: 0px;
     }
 }
+
+
+.modal {
+    display: flex; /* Aseguramos que use flexbox */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%; /* Se adapta a pantallas más pequeñas */
+    max-width: 700px; /* Limita el tamaño máximo en pantallas grandes */
+    max-height: 80%; /* Aumenta el tamaño máximo del contenido */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Permite que los elementos se alineen verticalmente */
+    justify-content: center; /* Centra el contenido dentro del modal */
+}
+
+.video-container {
+    width: 100%; /* Ajustamos para que ocupe todo el ancho del contenedor */
+    height: 0;
+    padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    position: relative;
+}
+
+.video-container iframe {
+    position: absolute; /* Hace que el iframe ocupe todo el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilos generales para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.modal.show {
+    display: flex; /* Mostrar modal */
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%; /* Se adapta a pantallas más pequeñas */
+    max-width: 700px; /* Limita el tamaño máximo en pantallas grandes */
+    max-height: 80%; /* Limita la altura máxima del modal */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    right: 10px; /* Ajusta la posición desde el lado derecho */
+    color: #000000; /* Color blanco para mayor contraste */
+    background-color:  #ffffff; /* Fondo oscuro semi-transparente */
+    font-size: 24px; /* Aumenta el tamaño del ícono para mejor visibilidad */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    border: none; /* Sin bordes */
+    padding: 5px; /* Espaciado alrededor del botón */
+    border-radius: 50%; /* Forma redonda */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: background-color 0.3s ease; /* Efecto de transición suave */
+    z-index: 1100; /* Asegurarnos de que esté encima del contenido del modal */
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo más claro al pasar el mouse para mejor feedback */
+    color: #000; /* Cambia el color a negro para contraste */
+}
+
+
+.video-container {
+    width: 100%; /* Ajustamos para que ocupe todo el ancho del contenedor */
+    height: 0;
+    padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    position: relative;
+}
+
+.video-container iframe {
+    position: absolute; /* Hace que el iframe ocupe todo el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
