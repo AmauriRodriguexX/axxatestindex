@@ -874,9 +874,9 @@ ul {
     unicode-bidi: isolate;
 }
 
-/* Para pantallas pequeñas (móviles) */
+
 @media (max-width: 768px) {
     ul {
-        padding-inline-start: 0px; /* Elimina el padding en móviles */
+        padding-inline-start: 0px;
     }
 }
